@@ -12,7 +12,7 @@
 - TensorFlow.js Lite: Runs LSTM models on mobile.
 - AsyncStorage: Saves wallet data locally.
 
-🚀 Instalation
+## 🚀 Instalation
 
 Step 1: Project Setup
 Install basic tools and create a new project.
