@@ -1,27 +1,16 @@
 # Crypto-AI-Integrated-System
 
 ## 🌟 Feature
-- Real-time Price Fetcher
-- Historical Data Analyzer
-- Sentiment Analyzer
-- Price Predictor (LSTM)
-- Anomaly Detector
-- Trading Strategy Optimizer
-- Wallet Generator
-- Transaction Simulator
-- Blockchain Data Analyzer
-- News Aggregator
-- Social Media Monitor
-- Risk Assessor
-- Arbitrage Finder
-- Pattern Recognizer
-- ICO Analyzer
-- DeFi Analytics
-- NFT Analyzer
-- Market Trend Analyzer
-- Volume Predictor
-- Sentiment-Trend Correlation
-- AI Auditor
+- Real-Time Prices: Displays Bitcoin, Ethereum, etc., prices via CoinGecko API.
+- AI Price Prediction: Shows 7-day price predictions using an LSTM model.
+- Wallet Simulator: Generates a simulated wallet address and saves it locally.
+- Simple UI: Only 3 main buttons and intuitive charts.
+
+## Technologies Used
+- React Native: For mobile app development.
+- CoinGecko API: Fetches crypto prices.
+- TensorFlow.js Lite: Runs LSTM models on mobile.
+- AsyncStorage: Saves wallet data locally.
 
 🚀 Instalation
 
@@ -45,4 +34,14 @@ Copy these commands into the terminal!
 
 Step 3: Main Code
 Create App.js and paste, or download App.js here!
+
+
+Step 4: Run the App
+For Beginners: Run these commands in the terminal.
+
+      # For Android  
+      npx react-native run-android  
+
+      # For iOS (requires macOS)  
+      npx react-native run-ios  
 
