@@ -15,6 +15,8 @@
 - Risk Assessor
 - Arbitrage Finder
 - Pattern Recognizer
+
+
 - ICO Analyzer
 - DeFi Analytics
 - NFT Analyzer
