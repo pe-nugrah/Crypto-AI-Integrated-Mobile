@@ -10,20 +10,20 @@ export default function App() {
   const [prediction, setPrediction] = useState([]);
   const [wallet, setWallet] = useState('');
 
-  // 1. Ambil harga kripto
+  // 1. Take the crypto price
   const fetchPrices = async () => {
     const response = await axios.get('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd');
     setPrices([...prices, response.data.bitcoin.usd]);
   };
 
-  // 2. Prediksi harga dengan model LSTM (simulasi)
+  // 2. Price prediction with LSTM model (simulation)
   const predictPrice = async () => {
     await tf.ready();
-    // Model sederhana untuk contoh
+    // Simple model for example
     const model = tf.sequential({
       layers: [tf.layers.lstm({ units: 50, inputShape: [7, 1] }), tf.layers.dense({ units: 1 })],
     });
-    // Prediksi dummy
+    // Dummy prediction
     const fakePrediction = prices.slice(-7).map(price => price * 1.02);
     setPrediction(fakePrediction);
   };
@@ -35,7 +35,7 @@ export default function App() {
     setWallet(fakeAddress);
   };
 
-  // Jalankan saat aplikasi dimulai
+  // Run when application starts
   useEffect(() => {
     fetchPrices();
     AsyncStorage.getItem('wallet').then(address => setWallet(address || ''));
@@ -45,20 +45,20 @@ export default function App() {
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.title}>💰 CryptoAI Mobile</Text>
 
-      {/* Tombol Utama */}
-      <Button title="Refresh Harga" onPress={fetchPrices} />
-      <Button title="Prediksi 7 Hari" onPress={predictPrice} />
-      <Button title="Buat Wallet" onPress={generateWallet} />
+      {/* Home Button */}
+      <Button title="Refresh Prices" onPress={fetchPrices} />
+      <Button title="7 Day Prediction" onPress={predictPrice} />
+      <Button title="Create a Wallet" onPress={generateWallet} />
 
-      {/* Tampilkan Harga */}
-      <Text style={styles.section}>Harga Bitcoin Terkini: ${prices.slice(-1)[0] || 'Loading...'}</Text>
+      {/* Show Price */}
+      <Text style={styles.section}>Latest Bitcoin Prices: ${prices.slice(-1)[0] || 'Loading...'}</Text>
 
-      {/* Grafik Prediksi */}
+      {/* Prediction Chart */}
       {prediction.length > 0 && (
         <>
-          <Text style={styles.section}>Prediksi Harga:</Text>
+          <Text style={styles.section}>Price Prediction:</Text>
           <LineChart
-            data={{ labels: ['Hari 1', 'Hari 2', 'Hari 3', 'Hari 4', 'Hari 5', 'Hari 6', 'Hari 7'], datasets: [{ data: prediction }] }}
+            data={{ labels: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6', 'Day 7'], datasets: [{ data: prediction }] }}
             width={300}
             height={200}
             chartConfig={{ color: (opacity = 1) => `rgba(0, 150, 255, ${opacity})` }}
