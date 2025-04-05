@@ -67,7 +67,7 @@ export default function App() {
       )}
 
       {/* Info Wallet */}
-      {wallet && <Text style={styles.wallet}>Wallet Anda: {wallet}</Text>}
+      {wallet && <Text style={styles.wallet}>Your wallet: {wallet}</Text>}
     </ScrollView>
   );
 }
