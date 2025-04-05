@@ -47,7 +47,7 @@ export default function App() {
 
       {/* Home Button */}
       <Button title="Refresh Prices" onPress={fetchPrices} />
-      <Button title="7 Day Prediction" onPress={predictPrice} />
+      <Button title="Predict" onPress={predictPrice} />
       <Button title="Create Wallet" onPress={generateWallet} />
 
       {/* Show Price */}
