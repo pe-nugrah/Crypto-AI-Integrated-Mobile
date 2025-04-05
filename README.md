@@ -48,8 +48,11 @@ For Beginners: Run these commands in the terminal.
 
 Step 5: Explanation for Non-Technical Users.
 
-"Refresh Harga" Button: Tap to update the latest Bitcoin price.
+"Refresh Prices" Button: Tap to update the latest Bitcoin price.
 
-"Prediksi" Button: Displays a 7-day price prediction chart (simulated 2% daily increase).
+"Predict" Button: Displays a 7-day price prediction chart (simulated 2% daily increase).
 
-"Buat Wallet" Button: Generates a fake wallet address and saves it on the device.
+"Create Wallet" Button: Generates a fake wallet address and saves it on the device.
+
+
+
