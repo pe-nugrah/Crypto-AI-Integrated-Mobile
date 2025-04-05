@@ -49,10 +49,9 @@ For Beginners: Run these commands in the terminal.
 Step 5: Explanation for Non-Technical Users.
 
 "Refresh Prices" Button: Tap to update the latest Bitcoin price.
-
 "Predict" Button: Displays a 7-day price prediction chart (simulated 2% daily increase).
-
 "Create Wallet" Button: Generates a fake wallet address and saves it on the device.
 
 
-
+For questions or discussions, feel free to open an Issue or email penugrah@criptext.com.
+Thank you! 😊
