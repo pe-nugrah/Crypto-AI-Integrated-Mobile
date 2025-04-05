@@ -48,7 +48,7 @@ export default function App() {
       {/* Home Button */}
       <Button title="Refresh Prices" onPress={fetchPrices} />
       <Button title="7 Day Prediction" onPress={predictPrice} />
-      <Button title="Create a Wallet" onPress={generateWallet} />
+      <Button title="Create Wallet" onPress={generateWallet} />
 
       {/* Show Price */}
       <Text style={styles.section}>Latest Bitcoin Prices: ${prices.slice(-1)[0] || 'Loading...'}</Text>
