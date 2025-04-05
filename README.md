@@ -14,7 +14,7 @@
 
 ## 🚀 Instalation
 
-Step 1: Project Setup
+Step 1: Project Setup.
 Install basic tools and create a new project.
 
       # Install Node.js from https://nodejs.org  
@@ -26,17 +26,17 @@ Install basic tools and create a new project.
       cd CryptoAIMobile  
 
 
-Step 2: Add Dependencies
+Step 2: Add Dependencies.
 Copy these commands into the terminal!
 
       npm install @react-navigation/native @react-navigation/native-stack react-native-screens react-native-safe-area-context axios @tensorflow/tfjs-react-native @react-native-async-storage/async-storage react-native-chart-kit  
 
 
-Step 3: Main Code
+Step 3: Main Code.
 Create App.js and paste, or download App.js here!
 
 
-Step 4: Run the App
+Step 4: Run the App.
 For Beginners: Run these commands in the terminal.
 
       # For Android  
@@ -45,3 +45,11 @@ For Beginners: Run these commands in the terminal.
       # For iOS (requires macOS)  
       npx react-native run-ios  
 
+
+Step 5: Explanation for Non-Technical Users.
+
+"Refresh Harga" Button: Tap to update the latest Bitcoin price.
+
+"Prediksi" Button: Displays a 7-day price prediction chart (simulated 2% daily increase).
+
+"Buat Wallet" Button: Generates a fake wallet address and saves it on the device.
